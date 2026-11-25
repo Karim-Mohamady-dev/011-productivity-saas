@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=family=Poppins:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --color-accent: #15803D;
+  --color-soft: #DCFCE7;
+  --color-bg: #181818;
+  --color-surface: #272727;
+  --color-ink: #FFFFFF;
+  --color-mute: #B5B5B5;
+}
+
+html { font-family: var(--font-sans); }
+body { background-color: var(--color-bg); color: var(--color-ink); }
+h1, h2, h3 { text-wrap: balance; }
+p, span, label { text-wrap: pretty; }
+button, a, input, select, textarea { transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1); }
+button:active, a:active { transform: scale(0.98); }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+.heading-1 { font-size: 2.25rem; line-height: 2.5rem; font-weight: 600; }
+.heading-3 { font-size: 1.875rem; line-height: 2.25rem; font-weight: 600; }
+.heading-4 { font-size: 1.5rem; line-height: 2rem; font-weight: 600; }
+.heading-5 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 600; }
+.heading-6 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 600; }
+@media (min-width: 768px) {
+  .heading-1 { font-size: 3.75rem; line-height: 3.75rem; }
+  .heading-3 { font-size: 2.25rem; line-height: 2.5rem; }
+  .heading-4 { font-size: 1.875rem; line-height: 2.25rem; }
+}
+.title-1 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 500; }
+.title-2 { font-size: 1.125rem; line-height: 1.75rem; font-weight: 500; }
+.title-3 { font-size: 1rem; line-height: 1.5rem; font-weight: 500; }
+.title-4 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 500; }
+.body-2 { font-size: 1rem; line-height: 1.5rem; font-weight: 500; }
+.body-3 { font-size: 1rem; line-height: 1.5rem; font-weight: 400; }
+.button-md { font-size: 1rem; line-height: 1.5rem; font-weight: 600; }
+.button-sm { font-size: 0.875rem; line-height: 1.25rem; font-weight: 600; }
+.caption-1 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 500; }
+.caption-2 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 400; }
+.caption-3 { font-size: 0.75rem; line-height: 1rem; font-weight: 600; }
+
+.hero-gradient {
+  background: linear-gradient(to left, #FFFFFF, #9B9B9B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+[dir="ltr"] .hero-gradient { background: linear-gradient(to right, #FFFFFF, #9B9B9B); -webkit-background-clip: text; background-clip: text; }
+
+@keyframes menuIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
