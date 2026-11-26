@@ -97,7 +97,7 @@ export const en = {
       {
         "name": "Starter",
         "desc": "For one person or a small team",
-        "price": "{{price_starter}}",
+        "price": "Free",
         "period": "per user per month",
         "features": [
           "3 projects",
@@ -109,7 +109,7 @@ export const en = {
       {
         "name": "Growth",
         "desc": "For teams working together daily",
-        "price": "{{price_growth}}",
+        "price": "$19",
         "period": "per user per month",
         "features": [
           "Unlimited projects",
@@ -121,7 +121,7 @@ export const en = {
       {
         "name": "Scale",
         "desc": "For several teams in one place",
-        "price": "{{price_scale}}",
+        "price": "$49",
         "period": "per user per month",
         "features": [
           "Multiple workspaces",
@@ -335,7 +335,7 @@ export const ar = {
       {
         "name": "البداية",
         "desc": "لشخص واحد أو فريق صغير",
-        "price": "{{price_starter}}",
+        "price": "مجاني",
         "period": "شهريا لكل مستخدم",
         "features": [
           "3 مشاريع",
@@ -347,7 +347,7 @@ export const ar = {
       {
         "name": "النمو",
         "desc": "للفرق التي تعمل معا يوميا",
-        "price": "{{price_growth}}",
+        "price": "$19",
         "period": "شهريا لكل مستخدم",
         "features": [
           "مشاريع غير محدودة",
@@ -359,7 +359,7 @@ export const ar = {
       {
         "name": "التوسع",
         "desc": "لعدة فرق في مكان واحد",
-        "price": "{{price_scale}}",
+        "price": "$49",
         "period": "شهريا لكل مستخدم",
         "features": [
           "مساحات عمل متعددة",
